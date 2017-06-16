@@ -1,0 +1,130 @@
+<div class="row banner-price">
+  <div class="col-xs-4">
+    <%= image_tag("logo.png", height: '80', class: 'logo') %>
+    <h1 class="lead">上海合気道秋风馆</h1>
+    <h4 class="lead-2">Shanghai Aikido SyuFu Kan</h4>
+  </div>
+  <div class="col-xs-8 home-right">
+    <div class="bg-navbar">
+      <%= render 'layouts/navbar' %>
+    </div>
+  </div>
+  <div class="row banner-text">
+    <div class="col-xs-12">
+      <h1 class="text-center">入会案内</h1>
+      <h4 class="text-center">Price</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row about-content">
+  <div class="container">
+    <div class="col-xs-12">
+      <h1 class="text-center featurette-heading">体术 x 剑术 x 杖术完全攻略</h1>
+      <p class="text-center lead">
+        合气道基本的招式，包括一教、二教、三教、四教、五教、四方摔、入身摔、回转摔、天地摔、反手摔、十字绞摔等11种主要技法。，每一种技法均可再配合正面打、前打、斜打、顺单手抓、逆单手抓、双手抓、后方双手抓，甚至可以沿生出站姿及半立坐姿的施技方式，因此在临敌的应变上，招式相当地变化多端。<br>
+        合气剑术与合气杖术学习，配合体术练习、纠正体术错误动作。<br>
+      </p>
+    </div>
+
+    <div class="row featurette">
+      <div class="col-xs-12">
+        <h3 class="text-center">课程一览</h3>
+        <table class="table table-bordered course">
+          <thead>
+            <tr> 
+              <th>课程</th> 
+              <th>道场</th> 
+              <th>时间</th> 
+              <th>地址</th> 
+              <th>备注</th> 
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+              <td>星期二</td>
+              <td>巨峰路道场</td>
+              <td>18:30-20:30</td>
+              <td>麒龍搏击跆拳道馆 乐林路133号(杨高北路巨峰路口通昌羽毛球馆二楼)</td>
+              <td>体术</td>
+            </tr>
+            <tr>
+              <td>星期三</td>
+              <td>宁国路道场</td>
+              <td>19:00-21:00</td>
+              <td>龙口路29弄7号1楼（魔方公寓宁国路店）</td>
+              <td>体术</td>
+            </tr>
+            <tr>
+              <td>星期四</td>
+              <td>巨峰路道场</td>
+              <td>18:30-20:30</td>
+              <td>麒龍搏击跆拳道馆 乐林路133号(杨高北路巨峰路口通昌羽毛球馆二楼)</td>
+              <td>体术</td>
+            </tr>
+            <tr>
+              <td>星期五</td>
+              <td>隆昌路道场</td>
+              <td>19:40~21:00</td>
+              <td>隆昌路586号  七巧国商场3楼明翼舞蹈</td>
+              <td>体术 + 武器</td>
+            </tr>
+            <tr>
+              <td>星期六</td>
+              <td>宁国路道场</td>
+              <td>14:30~16:30</td>
+              <td>龙口路29弄7号1楼（魔方公寓宁国路店）</td>
+              <td>体术</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>参加练习请至少提前15~30分钟到道场，练习时需穿着合气道道服，女生建议准备贴身背心及头绳。</li>
+          <li>如果是首次参加道场练习，请事先阅读道场礼仪，以帮助您更快的进入练习状态。</li>
+        </ul>
+
+        <h3 class="text-center">收费一览（RMB）</h3>
+        <table class="table table-bordered course">
+          <thead>
+            <tr> 
+              <th></th> 
+              <th>会员价格</th> 
+              <th>访客价格</th> 
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+              <td>月卡</td>
+              <td>300</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>年卡</td>
+              <td>2800</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>次卡（10次，三个月内有效)</td>
+              <td>400</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>单次</td>
+              <td>-</td>
+              <td>50</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>单次练习费用限短期到访的合气道经验者。</li>
+          <li>已缴练习费用仅限本人使用。</li>
+        </ul>
+
+        <h3 class="text-center">合气道技法一览</h3>
+        <%= render "layouts/aikido" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'static_pages/footer' %>

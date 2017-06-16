@@ -1,0 +1,33 @@
+<div class="row banner-infos">
+  <div class="col-xs-4">
+    <%= image_tag("logo.png", height: '80', class: 'logo') %>
+    <h1 class="lead">上海合気道秋风馆</h1>
+    <h4 class="lead-2">Shanghai Aikido SyuFu Kan</h4>
+  </div>
+  <div class="col-xs-8 home-right">
+    <div class="bg-navbar">
+      <%= render 'layouts/navbar' %>
+    </div>
+  </div>
+  <div class="row banner-text">
+    <div class="col-xs-12">
+      <h1 class="text-center">道长新闻</h1>
+      <h4 class="text-center">News</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container news_content">
+  <div class="row news">
+    <div class="col-md-12">
+      <h2 class="lead"><%= @info.title %></h2>
+      <p class="news-time"><small><%= @info.created_at.strftime('%Y-%m-%d') %></small></p>
+      
+      <div class="content">
+        <%= simple_format(@info.content) %>
+      </div>
+      
+    </div>
+
+  </div>
+</div>

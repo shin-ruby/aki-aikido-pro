@@ -1,0 +1,54 @@
+<div class="row banner about">
+  <div class="col-xs-4">
+    <%= image_tag("logo.png", height: '80', class: 'logo') %>
+    <h1 class="lead">上海合気道秋风馆</h1>
+    <h4 class="lead-2">Shanghai Aikido SyuFu Kan</h4>
+  </div>
+  <div class="col-xs-8 home-right">
+    <div class="bg-navbar">
+      <%= render 'layouts/navbar' %>
+    </div>
+  </div>
+  <div class="row banner-text">
+    <div class="col-xs-12">
+      <h1 class="text-center">道场介绍</h1>
+      <h4 class="text-center">About</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row about-content">
+  <div class="container">
+    <div class="col-xs-12">
+      <h1 class="text-center featurette-heading">日式传统武道、青春、热血、自信力</h1>
+      <p class="text-center lead">
+        上海合气道秋风馆成立于2015年8月，由一群志同道合的合气道练习者共同发起，为的是进行纯粹的合气道练习。我们保持开放积极的心态，鼓励与外界其他道场的交流学习，努力推进合气道在中国的普及，使合气道被越来越多的国人所了解和喜爱。<br>
+        合气道是一种后发先制、刚柔相济，阴阳相变，周流圆活，以巧取胜的一种实用技术，我们始终传承注重保护、崇尚礼仪的安全练习，时刻心念保护对手的精神，秉承“心性”的锻炼才是合气道锻炼的本旨，让每一个来参加练习的人都能微笑快乐，并从合气道的道理中获得收益。
+      </p>
+    </div>
+
+    <div class="row featurette">
+      <div class="col-xs-7 col-xs-push-5">
+        <h2 class="featurette-heading">什么是合气道</h2>
+        <p class="lead">合气道是一种后发先制、刚柔相济，阴阳相变，周流圆活，以巧取胜的一种实用技术，我们始终传承注重保护、崇尚礼仪的安全练习，时刻心念保护对手的精神，秉承“心性”的锻炼才是合气道锻炼的本旨，让每一个来参加练习的人都能微笑快乐，并从合气道的道理中获得收益。</p>
+      </div>
+      <div class="col-xs-5 col-xs-pull-7">
+        <%= image_tag("OSensei-a.png", size: "500", class: "featurette-image img-responsive center-block", alt: "Generic placeholder image") %>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12">
+        <h2 class="text-left featurette-heading">上海合气道秋风馆指导者</h2>
+        <h3 class="text-left lead">道场长 朱博海</h3>
+          <%= image_tag("zbh-aikido.jpg", size: "280", class: "img-thumbnail") %>
+        <p class="lead">
+          上海合气道秋风馆道场长，合气道三段。2003年开始练习合气道，至今有14年练习合气道的经验。2010年经日本合气会本部审查取得初段。2014年经日本合气会本部审查取得三段，曾多次赴日研习合气道。
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= render 'static_pages/footer' %>

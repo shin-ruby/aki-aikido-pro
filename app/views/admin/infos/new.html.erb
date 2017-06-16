@@ -1,0 +1,20 @@
+<h3>创建新闻</h3>
+<hr>
+
+<div class="row">
+	<div class="col-md-12">
+		<%= form_for @info, url: admin_infos_path, html: { multipart: true } do |f| %>
+			<%= render 'admin/shared/error_messages', object: @info %>
+
+			<%= f.label :title, "标题" %>
+			<%= f.text_field :title, class: 'form-control' %>
+
+			<%= f.label :content, "内容" %>
+			<%= f.text_area :content, class: 'form-control', rows: "20", id: "editor" %>
+			<br>
+			<%= f.submit "创建新闻", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
+
+<%= link_to '返回', admin_infos_path %>
