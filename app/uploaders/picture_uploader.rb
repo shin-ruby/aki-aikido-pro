@@ -14,12 +14,12 @@ class PictureUploader < CarrierWave::Uploader::Base
     "uploads/"
   end
 
-  def filename
-    if super.present?
-      @name ||= Digest::MD5.hexdigest(current_path)
-      "#{Time.now.year}/#{@name}.#{file.extension.downcase}"
-    end
-  end
+  # def filename
+  #   if super.present?
+  #     @name ||= Digest::MD5.hexdigest(current_path)
+  #     "#{Time.now.year}/#{@name}.#{file.extension.downcase}"
+  #   end
+  # end
 
   process resize_to_fit: [800, 800]
   
