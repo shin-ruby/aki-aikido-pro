@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
   root 'static_pages#home'
-
-  resources :infos, only:[:index, :show]
   
   get  'about', to: 'static_pages#about'
   get  'price', to: 'static_pages#price'
   get  'contact', to: 'static_pages#contact'
+  get  'privacy', to: 'static_pages#privacy'
+  resources :messages, only: [:new, :create]
+  resources :infos, only: [:index, :show]
 
   namespace :admin do
     root 'home#show', as: 'root'
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
     end
 
     resources :users, except: [:show, :edit, :update]
-    # resources :messages, except: [:new, :create]
+    resources :messages, only: [:index, :show]
 
     get '/login', to: 'sessions#new'
     post '/login', to:'sessions#create'
