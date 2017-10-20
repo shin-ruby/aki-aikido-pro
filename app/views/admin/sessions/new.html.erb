@@ -1,12 +1,12 @@
 <div class="container">
 
-  <%= form_for :session, url: admin_login_path, html: { class: "form-signin" } do |f| %> 
+  <%= form_for :session, url: admin_login_path, html: { class: "form-signin" } do |f| %>
 		<% flash.each do |message_type, message| %>
 			<div class="alert alert-<%= message_type %>"><%= message %></div>
 		<% end %>
-	
+
   	<%= image_tag 'logo.png', width: 80 %>
-  	<h3 class="form-signin-heading">上海合気道秋风馆管理后台</h3>
+  	<h3 class="form-signin-heading">和心会 · 上海合気道秋风馆管理后台</h3>
 		<%= f.label :email, class: 'sr-only' %>
 		<%= f.email_field :email, class: 'form-control', placeholder: "邮箱" %>
 		<%= f.label :password,class: 'sr-only' %>
